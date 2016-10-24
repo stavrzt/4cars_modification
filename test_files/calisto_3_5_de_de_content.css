@@ -2193,13 +2193,6 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
 @media (min-width: 992px) {
 	.mainNavigation > .nav > li.active > a {
 		outline: none;
-		background-repeat: repeat-x;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 25%, rgba(0,0,0,0.05) 100%);
-		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.05)));
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 25%,rgba(0,0,0,0.05) 100%);
-		background-image: -o-linear-gradient(top, rgba(0,0,0,0) 25%,rgba(0,0,0,0.05) 100%);
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 25%,rgba(0,0,0,0.05) 100%);
-		background-image: linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgba(0,0,0,0.05) 100%);
 	}
 	.ielte9 .mainNavigation > .nav > li.active > a {
 		border-bottom: 4px solid #008EBD;
@@ -2208,18 +2201,20 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
 	.nav-main .nav > li > a {
 		z-index: 1005;
 		float: none;
-		padding: 10px 17px 9px;
-		border-width: 1px;
-		border-style: solid solid none;
-		border-color: transparent;
-		color: #555;
+		padding: 20px 17px;
+		color: #333333;
 		text-decoration: none;
 		-webkit-background-clip: padding-box;
 		   -moz-background-clip: padding;
 		        background-clip: padding-box;
 	}
+  .nav-main .nav > li.cat-welcome:hover > a.onlyIcon{
+    box-shadow: none;
+  }
 	.nav-main .nav > li > a.onlyIcon {
-		padding: 9px 15px 8px;
+		padding: 10px 0;
+    margin-right: 35px;
+    background-color: white;
 	}
 	.categoryView .navbar .nav > li > a {
 		z-index: auto;
@@ -2466,11 +2461,12 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
 	}
 	.navbar-brand img {
 		max-width: 100%;
+    max-width: 370px;
 	}
 }
 @media (min-width: 992px) {
 	.navbar-brand {
-		padding: 15px 15px;
+    margin-top: 35px;
 	}
 }
 .navbar-brand:hover,
@@ -2648,18 +2644,17 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
   background-color: #888;
 }
 .badge {
+  padding: 11px 15px;
+  font-size: 16px;
   display: inline-block;
   min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
   color: #fff;
   line-height: 1;
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: #999;
-  border-radius: 10px;
+  background-color: #ff6600;
+  border-radius: 19px;
 }
 .badge:empty {
   display: none;
@@ -3269,11 +3264,7 @@ table {
 	color: #8a6d3b;
 }
 /*** PLENTY STYLES ****/
-.nav-main {
-	border-width: 1px;
-	border-style: none none solid;
-	border-color: #ddd;
-}
+
 .mainNavigation {
 	position: relative;
 	padding-left: 0;
@@ -3285,20 +3276,12 @@ table {
 	}
 	.mainNavigation .nav > li + li > a {
 		margin-left: -1px;
-	}
-	.mainNavigation .nav > li > a:after,
-	.mainNavigation .nav:after {
-		content: "";
-		position: absolute;
-		display: block;
-		bottom: 0;
-		right: -1px;
-		width: 1px;
-		height: 40px;
-		background: #ddd;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 31px 10px 31px 10px;
 	}
 	.mainNavigation .nav > li > a {
-		height: 40px;
+		height: auto;
 	}
 	.nav.navbar-nav:after {
 		right: auto;
@@ -3335,15 +3318,15 @@ table {
 	border-color: rgba(0, 0, 0, 0.15);
 	vertical-align: middle;
 }
-.mainNavigation > .navbar-form input[type="search"] {
-	width: 230px;
-	height: 30px;
+.mainNavigation .container > .navbar-form input[type="search"] {
+	width: 225px;
+	height: 44px;
 	margin: 0;
 	border-right-style: none;
-	background-color: transparent;
-	-webkit-border-radius: 3px 0 0 3px;
-	   -moz-border-radius: 3px 0 0 3px;
-	        border-radius: 3px 0 0 3px;
+	background-color: white;
+	-webkit-border-radius: 8px 0 0 8px;
+	   -moz-border-radius: 8px 0 0 8px;
+	        border-radius: 8px 0 0 8px;
 	-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.075) inset;
 	   -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.075) inset;
 	        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.075) inset;
@@ -3380,13 +3363,12 @@ table {
 		/*width: 300px;*/
 	}
 }
-.mainNavigation > .navbar-form button {
-	width: 34px;
-	height: 30px;
-	border-style: solid;
-	border-width: 1px;
+.mainNavigation .container > .navbar-form button {
+	width: 44px;
+	height: 44px;
 	padding: 0;
-	background-color: transparent;
+	background-color: #ff6600;
+  border:none;
 	-webkit-border-radius: 0 3px 3px 0;
 	   -moz-border-radius: 0 3px 3px 0;
 	        border-radius: 0 3px 3px 0;
@@ -4322,6 +4304,7 @@ a.noLink:link {
 @media (min-width: 992px) {
 	.navbar-information .nav > li > a {
 	    z-index: 2005;
+      font-family: Arial;
 	}
 	.navbar-information .nav > li > .dropdown-menu {
 		z-index: 2000;
@@ -7695,3 +7678,119 @@ dd.clear:after {
 }
 /* ------ Content ------- */
 
+
+/*CUSTOM*/
+
+.navbar-brand a img {
+  max-width: 335px;
+  padding-top: 10px; 
+}
+
+.navbar-information{
+  background-color: #c8c8c8;
+  color: #333333;
+}
+
+.navbar-information a{
+  font-size: 19px;
+}
+
+.no-touch .nav > li.dropdown:hover > a:before{
+  display: none;
+}
+
+.free-shipping{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 27px 0 10px 0;
+}
+
+.no-touch .nav > li.isBasketPreview a{
+  padding: 10px 17px 12px 17px;
+  width: 115px;
+}
+
+.isBasketPreview .shop-cart{
+  float: left;
+  max-width: 30px;
+  margin: 7px 4px 0 0;
+}
+
+.navbar-icons{
+  float: right;
+  padding-left: 0;
+  min-width: 700px;
+}
+
+.navbar-icons li{
+  max-width: 82px;
+  float: left;
+  list-style: none;
+  margin-right: 3%;
+}
+
+.navbar-icons li img{
+  width: 100%;
+}
+
+.navbar-icons li p{
+  font-family: Arial;
+  font-size: 14px;
+  text-align: center;
+  margin: 8px 0 0 0;
+  word-wrap: break-word;
+}
+
+.navbar-icons .seventh{
+  margin-right: 0;  
+}
+
+.cat-welcome{
+  background-color: white;
+  position: relative;
+  margin-right: 42px;
+}
+
+.cat-welcome:after{
+  content: '';
+  position: absolute;
+  right: -42px;
+  top: 0;
+  border-bottom: 82px solid #c8c8c8;
+  border-left: 42px solid white;
+}
+
+.cat-welcome img{
+  width: 70px;
+}
+
+.mainNavigation>ul>li:last-child>a{
+    color: #ff6600;
+}
+
+.left_white{
+  width: 50%;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right_grey{
+  width: 50%;
+  background-color: #c8c8c8;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.content_search_form{
+  padding-top: 19px;
+}
+
+.navbar-nav{
+  position: relative;
+  background-color: #c8c8c8;
+}
