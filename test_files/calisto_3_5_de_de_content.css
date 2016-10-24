@@ -427,7 +427,7 @@ a.basicColor:focus {
 a,
 .basicColor a,
 .btn-link {
-	color: #008EBD;
+	color: #666666;
 	text-decoration: none;
 }
 a:hover,
@@ -552,8 +552,11 @@ h3 {
   color: #555;
 }
 h1 {
-  font-size: 38.5px;
-font-weight: 300;
+  font-family: Arial;
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 40px;
 }
 h1{
   line-height: 48px;
@@ -2167,9 +2170,6 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
   padding: 5px;
 }
 @media (max-width: 991px) {
-	.navbar-information .nav > li > a {
-	    color: #888;
-	}
 	.nav > li > a:hover,
 	.nav > li > a:focus {
 	    color: #666;
@@ -2503,9 +2503,6 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
     display: none;
   }
 }
-.navbar-nav {
-	margin: 8px -2px;
-}
 .navbar-nav > li > a {
   line-height: 20px;
 }
@@ -2580,11 +2577,7 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
     top: 0;
   }
 }
-@media (max-width: 991px) {
-  .navbar-form .form-group {
-    margin-bottom: 5px;
-  }
-}
+
 @media (min-width: 992px) {
   .navbar-form {
     width: auto;
@@ -3322,7 +3315,7 @@ table {
 	width: 225px;
 	height: 44px;
 	margin: 0;
-	border-right-style: none;
+	border: none;
 	background-color: white;
 	-webkit-border-radius: 8px 0 0 8px;
 	   -moz-border-radius: 8px 0 0 8px;
@@ -3802,7 +3795,7 @@ table {
 /* footer */
 footer {
 	margin-top: 64px;
-	padding: 12px 0 36px;
+	padding: 12px 0 10px;
 	border-top: 1px solid #ddd;
 	color: #999;
 }
@@ -3903,19 +3896,19 @@ small,
 	.h-xs-3 { height: 72px; }
 	.h-xs-4 { height: 96px; }
 	.h-xs-5 { height: 120px; }
-	.h-xs-6 { height: 144px; }
+	.h-xs-12 { height: 144px; }
 	.h-xs-1.adapt-line-height { line-height: 24px; }
 	.h-xs-2.adapt-line-height { line-height: 48px; }
 	.h-xs-3.adapt-line-height { line-height: 72px; }
 	.h-xs-4.adapt-line-height { line-height: 96px; }
 	.h-xs-5.adapt-line-height { line-height: 120px; }
-	.h-xs-6.adapt-line-height { line-height: 144px; }
+	.h-xs-12.adapt-line-height { line-height: 144px; }
 	.max-h-xs-1 { max-height: 24px; }
 	.max-h-xs-2 { max-height: 48px; }
 	.max-h-xs-3 { max-height: 72px; }
 	.max-h-xs-4 { max-height: 96px; }
 	.max-h-xs-5 { max-height: 120px; }
-	.max-h-xs-6 { max-height: 144px; }
+	.max-h-xs-12 { max-height: 144px; }
 	.h-xs-offset-0 { margin-top: 0; }
 	.h-xs-offset-025 { margin-top: 6px; }
 	.h-xs-offset-05 { margin-top: 12px; }
@@ -4759,10 +4752,6 @@ a.noLink:link {
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-	.no-touch .categoryView.isGridView .itemBox,
-	.no-touch .crossSellingWrapper {
-		height: 348px;
-	}
 	.touch .categoryView.isGridView .itemBox,
 	.touch .crossSellingWrapper {
 		height: 388px;
@@ -4771,7 +4760,7 @@ a.noLink:link {
 @media (min-width: 1200px) {
 	.no-touch .categoryView.isGridView .itemBox,
 	.no-touch .crossSellingWrapper {
-		height: 300px;
+		height: 370px;
 	}
 	.touch .categoryView.isGridView .itemBox,
 	.touch .crossSellingWrapper {
@@ -4852,16 +4841,18 @@ a.noLink:link {
 	margin: 0;
 }
 .itemBox .name {
-	font-size: 1.25em;
+  font-family: Arial;
+	font-size: 16px;
 	padding: 6px 0;
 }
 .categoryView.isGridView .itemBox .name,
 .crossSellingSlider .itemBox .name {
-	max-height: 60px;
-	min-height: 60px;
+	max-height: 58px;
+	min-height: 58px;
 	overflow: hidden;
 	padding-left: 3px;
 	padding-right: 3px;
+  margin: 15px 0 40px 0;
 }
 .itemBox .price .uvp,
 .itemBoxSingleView .price .uvp {
@@ -5069,9 +5060,6 @@ a.noLink:link {
 		display: inline-block;
 		margin: 3px;
 		vertical-align: top;
-	}
-	.touch .itemBoxInner .buttonBox a {
-		display: inline-block;
 	}
 }
 @media (min-width: 768px) {
@@ -5611,16 +5599,11 @@ ul.footerList {
 	background-color: #ccc;
 }
 .owl-controls .owl-buttons > div {
-	width: 26px;
-	height: 26px;
+  height: 99px;
+	width: 49px;
 	display: block;
 	position: absolute;
-	top: 50%;
-	margin-top: -13px;
-	background-color: #333;
-	opacity: 0.5;
-	color: #fff;
-	text-align: center;
+	top: calc(50% - 49px);
 }
 .owl-controls .owl-buttons > div:before {
 	font-family: "glyphicon";
@@ -5661,12 +5644,6 @@ ul.footerList {
 		right: 10px;
 	}
 }
-.owl-controls .owl-buttons .owl-prev:before {
-	content: "\e079";
-}
-.owl-controls .owl-buttons .owl-next:before {
-	content: "\e080";
-}
 .itemBox .owl-controls { 
 	display: block;
 }
@@ -5694,6 +5671,7 @@ ul.footerList {
 .owl-controls .owl-buttons > div.disabled {
 	opacity: 0.15;
 	cursor: default;
+  display: none;
 }
 /* no touch only */
 .no-touch .itemBox .owl-controls {
@@ -6903,10 +6881,6 @@ span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer + span.PlentyFo
 }
 /* END CONTENT PAGE SLIDER */
 /* CONTENT STYLE */
-.isHome .textWrapper {
-	max-height: 150px;
-	overflow-y: auto;
-}
 .text-large-responsive {
 	line-height: 1.2;
 }
@@ -7681,6 +7655,10 @@ dd.clear:after {
 
 /*CUSTOM*/
 
+body{
+  font-family: Arial;
+}
+
 .navbar-brand a img {
   max-width: 335px;
   padding-top: 10px; 
@@ -7734,7 +7712,6 @@ dd.clear:after {
 }
 
 .navbar-icons li p{
-  font-family: Arial;
   font-size: 14px;
   text-align: center;
   margin: 8px 0 0 0;
@@ -7754,7 +7731,7 @@ dd.clear:after {
 .cat-welcome:after{
   content: '';
   position: absolute;
-  right: -42px;
+  right: -41px;
   top: 0;
   border-bottom: 82px solid #c8c8c8;
   border-left: 42px solid white;
@@ -7793,4 +7770,441 @@ dd.clear:after {
 .navbar-nav{
   position: relative;
   background-color: #c8c8c8;
+}
+
+.btn-search img{
+  width: 76%;
+}
+
+.owl-controls .owl-pagination .owl-page{
+  width: 50px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+.contentpageSlider .owl-buttons .owl-prev {
+  background-image: url('left_owl.png');
+  margin-left: 100px;
+}
+
+.contentpageSlider .owl-buttons .owl-next {
+  background-image: url('right_owl.png');
+  margin-right: 100px;
+}
+
+.itemBox.action-2 .action{  /*убрал надпись NEU*/
+  display: none;
+}
+
+.itemBox .itemBoxInner, .previewImage, .crossSellingItemInner{
+  border: none;
+}
+
+.oldprice{
+  color: red;
+  text-decoration: line-through;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.large.linkToItem {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.shipping img{
+  max-width: 30px;
+  float: right;
+  margin: 8px 10px 0 0;
+}
+
+.logo_bottom{
+  max-width: 260px;
+  display: block;
+  margin:0 auto;
+}
+
+.orange{
+  color: #ff6600;
+}
+
+.seo_text{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.seo_text h3{
+  font-size: 18px;
+}
+
+footer img{
+  max-width: 100%;
+}
+
+.logo_container p{
+  color: #666666;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 35px;
+}
+
+.logo_container form{
+  margin-top: 7px;
+}
+
+.form-block-3-button:not(.break-sm) .form-group{
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+[class*="form-block-"][class*="-button"]:not(.break-sm) .btn.onlyIcon{
+  height: 100%;
+  width: 55px;
+  right: -55px
+}
+
+[class*="form-block-"][class*="-button"]:not(.break-sm){
+  margin-right: 55px;
+}
+
+.form-block-3-button .btn{
+  background-color: #333333;
+}
+
+.form_container{
+  padding-left: 70px;
+}
+
+.footlist_wrap{
+  background-color: #333333;
+  color: #fff;
+}
+
+.footlist_wrap a{
+  font-size: 14px;
+}
+
+.footerLine{
+  font-size: 16px;
+  color: #333333;
+}
+
+
+@media (max-width: 1199px){
+
+  .free-shipping{
+    margin: 17px 0 10px 0;
+    font-size: 18px;
+  }
+
+  .touch .navbar .nav > li > a{
+    font-size: 16px;
+  }
+
+  .no-touch .nav > li.isBasketPreview a{
+    width: 95px;
+    padding: 6px 0 5px 17px;
+  }
+
+  .navbar-information .nav > li > a{
+    padding-bottom: 10px; 
+  }
+
+.navbar-brand a img{
+    max-width: 300px;
+  }
+
+  .navbar-icons{
+    min-width: 520px;
+  }
+
+  .navbar-icons li{
+    max-width: 70px;
+    float: left;
+    list-style: none;
+    margin-right: 5px;
+  }
+
+  .navbar-icons li p{
+    font-size: 13px;
+  }
+
+ .touch .navbar .nav  .cat-welcome > a{
+    padding-left: 0;
+    margin-right: 5px;
+ }
+
+ .mainNavigation .container > .navbar-form button {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mainNavigation .container > .navbar-form input[type="search"] {
+    width: 205px;
+    height: 34px;
+  }
+
+  .content_search_form{
+    padding-top: 22px;
+  }
+
+  .contentpageSlider .owl-buttons .owl-prev {
+    margin-left: 50px;
+  }
+
+  .contentpageSlider .owl-buttons .owl-next {
+    margin-right: 50px;
+  }
+
+  .logo_container p{
+    font-size: 15px;
+  }
+
+  .form_container {
+    padding-left: 40px;
+  }
+
+
+}
+
+@media (max-width: 991px){
+
+  .no-touch .nav > li.isBasketPreview a {
+    padding: 3px 0 3px 17px;
+  }
+
+.form_container {
+  padding-left: 0;
+  width: 70%;
+  margin:35px 0 0 15%;
+}
+
+.touch .categoryView.isGridView .itemBox, .touch .crossSellingWrapper{
+  height: 550px;
+}
+
+.badge {
+  padding: 8px 12px;
+}
+
+.isBasketPreview .shop-cart {
+  margin: 4px 4px 0 0;
+}
+
+.navbar .nav > li > a, .navbar .nav > li > ul > li > a, .navbar .nav .dropdown-header {
+  padding: 10px 5px 8px 5px;
+}
+
+.touch .navbar .nav > li > a {
+  background-color: white;
+}
+
+.left_white, .right_grey{
+  display: none;
+}
+
+.navbar-main > li:last-child{
+  margin-bottom: 0;
+}
+
+.navbar-icons{
+  min-width: 100%;
+}
+
+.navbar-icons li {
+  max-width: 75px;
+  float: left;
+  list-style: none;
+  width: 75px;
+  margin-right: 5px;
+}
+
+.navbar-brand a img {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.cat-welcome:after{
+  border: none;
+}
+
+.navbar-right{
+  float: right;
+  margin: 8px -2px;
+}
+
+.navbar-form, .navbarInputWrapper{
+  float: left;
+  margin: 0 0 0 8px;
+}
+
+.cat-welcome{
+  margin-right:0;
+  text-align: center;
+}
+
+.mainNavigation .container > .navbar-form input[type="search"] {
+  width: 300px;
+  height: 34px;
+  float: left;
+  border: 1px solid #c8c8c8;
+}
+
+.free-shipping {
+  margin: 30px 0 0px 0;
+  font-size: 15px;
+}
+
+.navbar-main{
+  margin-top: 20px;
+  padding: 0 15px;
+  background-color: white;
+  position: absolute;
+}
+}
+
+@media (max-width: 767px){
+  .navbar-information .container{
+    position: relative;
+  }
+
+  .pull-left {
+    float: none !important;
+  }
+
+  .free-shipping{
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .navbar-brand{
+    margin-top: 0;
+  }
+
+  .navbar-toggle{
+    margin-top: 20px;
+  }
+
+  .categoryView.isGridView .itemBox .name, .crossSellingSlider .itemBox .name {
+    margin-bottom: 0;
+  }
+
+  .touch .categoryView.isGridView .itemBox, .touch .crossSellingWrapper {
+    border-bottom: 2px solid lightgrey;
+  }
+
+  .navbar-brand a img{
+    max-width: 100%;
+  }
+
+  .logo_container{
+    text-align: center;
+  }
+
+  footer{
+    margin-top: 0;
+  }
+
+  .logo_container p{
+    min-height: auto;
+  }
+
+  .logo_container .row>div{
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .form_container {
+    margin-top: 10px;
+  }
+
+  .margin-top-3{
+    margin-top: 0;
+  }
+
+  h1{
+    margin-bottom: 15px;
+  }
+
+  [class*="form-block-"][class*="-button"]:not(.break-sm) {
+    margin-right: 0;
+  }
+
+  footer img {
+    height: 100%;
+  }
+
+  [class*="form-block-"][class*="-button"]:not(.break-sm) .btn.onlyIcon {
+    height: 40px;
+    width: 100px;
+    right: -55px;
+  }
+
+  .footlist_wrap .container{
+    margin-top: 0;
+  }
+
+  .navbar-icons li{
+    max-width: 70px;
+    margin-bottom: 15px;
+  }
+
+ .navbar-icons{
+    min-width: auto; 
+    float: initial;
+    margin: 0 auto;
+    width: 320px;
+  }
+
+  .navbar-form, .navbarInputWrapper {
+    float: left;
+    margin: 0 0 0 8px;
+    width: calc(100% - 45px);
+  }
+
+  .mainNavigation .container > .navbar-form input[type="search"]{
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px){
+  .footlist_wrap .row>div{
+    width: 100%;
+  }
+
+  .navbar-brand{
+    margin: 8px 10px;
+  }
+
+  .touch .categoryView.isGridView .itemBox, .touch .crossSellingWrapper{
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .navbar .nav > li > a, .navbar .nav > li > ul > li > a, .navbar .nav .dropdown-header{
+    padding: 10px 2px 8px 2px;
+  }
+}
+
+@media (max-width: 400px){
+  .navbar-icons li {
+    max-width: 66px;
+  }
+
+  .navbar-icons li p {
+    font-size: 12px;    
+  }
+
+  .navbar-information .nav > .isBasketPreview{
+    float: right;
+    display: block;
+    margin-top: 7px;
+  }
+
+  .navbar .nav > li > a, .navbar .nav > li > ul > li > a, .navbar .nav .dropdown-header{
+    padding: 10px 6px 8px 6px;
+  }
 }
