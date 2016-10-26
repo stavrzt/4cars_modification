@@ -427,7 +427,7 @@ a.basicColor:focus {
 a,
 .basicColor a,
 .btn-link {
-	color: #666666;
+	color: #333333;
 	text-decoration: none;
 }
 a:hover,
@@ -3546,6 +3546,7 @@ table {
 @media (max-width: 991px) {
 	.navbar .mainNavigation li {
 		position: relative;
+    text-align: left;
 	}
 	.navbar .mainNavigation li.open > ul {
 		display: block;
@@ -7171,7 +7172,6 @@ span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer + span.PlentyFo
 /* END Checkout Navigation */
 
 /* START Checkout */
-
 .checkout-tabpanel > [role="tabpanel"] {
 	display: none;
 }
@@ -7390,10 +7390,6 @@ input.panel-select[type="radio"],
 
 .panel-select:checked + .panel {
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
-	/*
-	border: 1px solid #66afe9;
-	border-radius: 5px;
-	*/
 }
 
 .panel-select + .panel label.panel-heading {
@@ -7411,7 +7407,6 @@ input.panel-select[type="radio"],
 
 .panel-select:checked + .panel > .panel-body {
 	border-color: #66afe9;
-	/*display: block;*/
 }
 
 label .row,
@@ -7890,7 +7885,6 @@ footer img{
   color: #333333;
 }
 
-
 @media (max-width: 1199px){
 
   .free-shipping{
@@ -7974,6 +7968,10 @@ footer img{
     padding: 3px 0 3px 17px;
   }
 
+  .navbar-icons li p{
+    font-size: 18px;
+  }
+
 .form_container {
   padding-left: 0;
   width: 70%;
@@ -8019,6 +8017,7 @@ footer img{
   padding: 0 20px;
   min-height: 220px;
   vertical-align: top;
+  margin-bottom: 25px;
 }
 
 .navbar-img{
@@ -8027,24 +8026,21 @@ footer img{
 
 .navbar-img img {
   width: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .cat-welcome:after{
   border: none;
 }
 
-.navbar-right{
-  float: right;
-  margin: 8px -2px;
-}
-
 .navbar-form, .navbarInputWrapper{
-  float: left;
-  margin: 0 0 0 8px;
+  margin: 0;
+  overflow: hidden;
+  margin-right: 34px;
+  padding-left: 15px;
 }
 
-.cat-welcome{
+.navbar .mainNavigation .cat-welcome{
   margin-right:0;
   text-align: center;
 }
@@ -8057,8 +8053,9 @@ footer img{
 }
 
 .free-shipping {
-  margin: 30px 0 0px 0;
-  font-size: 15px;
+  margin: 25px 0 0px 0;
+  font-size: 16px;
+  padding-bottom: 5px;
 }
 
 .navbar-main{
@@ -8067,11 +8064,36 @@ footer img{
   background-color: white;
   position: absolute;
 }
+
+.navbar-default .navbar-toggle{
+    margin: 35px 15px;
+  }
+
+.mainNavigation> .container{
+    width: 100%;
+  }
+
+.mainNavigation .container > .navbar-form button{
+  position: absolute;
+  top: 22px;
+  right: 0px;
+  z-index: 1;
+}
+
+.nav.navbar-nav.navbar-right {
+  float: right;
+  margin-top: 6px;
+}
+
 }
 
 @media (max-width: 767px){
 
-  .container{
+  .nav.navbar-nav.navbar-right {
+    float: none;
+  }
+
+  .navbar-header .container{
     padding: 0;
   }
 
@@ -8087,12 +8109,7 @@ footer img{
     float: right;
   }
 
-.navbar-right{
-    float: left;
-    width: 100%;
-  }
-
-  .navbar-right, .touch .nav.navbar-right > li > a{
+  .navbar-right, .nav.navbar-nav.navbar-right > li > a{
     background-color: transparent;
     color: #ffffff;
     border: none;
@@ -8120,16 +8137,17 @@ footer img{
     position: relative;
   }
 
-  .free-shipping{
-    display: none;
-  }
-
   .navbar-brand{
     margin-top: 0;
+    padding: 0 50px;
   }
 
-  .navbar-toggle{
-    margin-top: 20px;
+  .navbar-icons li p{
+    font-size: 16px;
+  }
+
+  .navbar-default  .navbar-toggle{
+    margin: 18px 15px;
   }
 
   .categoryView.isGridView .itemBox .name, .crossSellingSlider .itemBox .name {
@@ -8148,10 +8166,6 @@ footer img{
 
   .logo_container{
     text-align: center;
-  }
-
-  footer{
-    margin-top: 0;
   }
 
   .logo_container p{
@@ -8179,6 +8193,10 @@ footer img{
     margin-right: 0;
   }
 
+  footer{
+    margin-top: 0;
+  }
+
   footer img {
     height: 100%;
   }
@@ -8193,16 +8211,10 @@ footer img{
     margin-top: 0;
   }
 
-  .navbar-icons{
+  .navbar-brand .navbar-icons{
     min-width: auto; 
     float: initial;
-    margin: 20px auto;
-  }
-
-  .navbar-form, .navbarInputWrapper {
-    float: left;
-    margin: 0 0 0 8px;
-    width: calc(100% - 45px);
+    margin-top: 40px;
   }
 
   .mainNavigation .container > .navbar-form input[type="search"]{
@@ -8216,11 +8228,22 @@ footer img{
   .contentpageSlider .owl-buttons .owl-prev{
     margin-left: 10px;
   }
+
+  .free-shipping{
+    padding: 0 15px;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+  }
+
 }
 
 @media (max-width: 650px){
   .navbar-icons li {
     min-height: 190px;
+  }
+
+  .navbar-brand {
+    padding: 0 10px;
   }
 }
 
@@ -8246,7 +8269,11 @@ footer img{
 
 }
 
-@media (max-width: 400px){
+@media (max-width: 420px){
+
+  .navbar-information .container{
+    padding: 0 13px;
+  }
 
   .navbar-img img{
     margin-right: 0;
@@ -8257,7 +8284,7 @@ footer img{
     max-width: 50%;
   }
 
-  .navbar-right{
+  .free-shipping, .navbar-right{
     text-align: center;
   }
 
