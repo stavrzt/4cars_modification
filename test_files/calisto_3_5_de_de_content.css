@@ -1483,7 +1483,7 @@ fieldset[disabled] .btn-default.active {
 .PlentyWebMyAccount .inlineSubmitButton,
 .PlentyWebMyAccount .button,
 .PlentyWebMyAccount .inlineSubmitButton,
-.PlentyWebMyAccount input[type="button"] { background-color: #008ebd; }
+.PlentyWebMyAccount input[type="button"] { background-color: #333333; }
 .btn-success { background-color: #3b0; }
 .btn-info { background-color: #999; }
 .btn-warning { background-color: #fc3; }
@@ -2473,14 +2473,14 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
 .navbar-toggle {
   position: relative;
   float: right;
-  margin: 8px 15px;
+  margin: 18px 0;
   padding: 4px 10px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  width: 44px;
-  height: 34px;
+  width: 40px;
+  height: 39px;
 }
 .navbar-toggle:focus {
   outline: none;
@@ -2623,10 +2623,7 @@ li.dropdown > ul.dropdown-menu > li > ul ul {
 .navbar-default .navbar-toggle {
   border-color: #ccc;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-	background-color: #eee;
-}
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
@@ -3579,7 +3576,7 @@ table {
 		left: auto;
 		right: 0;
 		width: 38px;
-		height: 38px;
+		height: 41px;
 	}
 	.navbar .nav li > .openCloseToggle:before,
 	.navbar .nav li.open.animating > .openCloseToggle:before {
@@ -4091,7 +4088,7 @@ li.open.animating > .openCloseToggle:before {
 }
 .no-touch .openCloseToggle:hover:before,
 .no-touch li.open.animating > .openCloseToggle:hover:before {
-	border-color: transparent #008EBD;
+	border-color: transparent #ff6600;
 }
 li.open > .openCloseToggle:before,
 li.animating > .openCloseToggle:before {
@@ -7648,6 +7645,11 @@ body{
   font-family: Arial;
 }
 
+.mobile_wrap .container{
+  float: left;
+  width: auto;
+}
+
 .navbar-img{
   float: left;
 }
@@ -7787,12 +7789,16 @@ body{
   margin-right: 100px;
 }
 
-.itemBox.action-2 .action{  /*убрал надпись NEU*/
+.itemBox.action-2 .action{
   display: none;
 }
 
 .itemBox .itemBoxInner, .previewImage, .crossSellingItemInner{
   border: none;
+}
+
+.touch .categoryView.isGridView .itemBox:last-child {
+  margin-bottom: 35px;
 }
 
 .oldprice{
@@ -7828,8 +7834,10 @@ body{
   margin-top: 20px;
 }
 
-.seo_text h3{
+.seo_text h1{
   font-size: 18px;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 
 footer img{
@@ -7863,10 +7871,6 @@ footer img{
   margin-right: 55px;
 }
 
-.form-block-3-button .btn{
-  background-color: #333333;
-}
-
 .form_container{
   padding-left: 70px;
 }
@@ -7889,15 +7893,14 @@ footer img{
 
   .free-shipping{
     margin: 17px 0 10px 0;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .touch .navbar .nav > li > a{
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .no-touch .nav > li.isBasketPreview a{
-    width: 95px;
     padding: 6px 0 5px 17px;
   }
 
@@ -7964,6 +7967,34 @@ footer img{
 
 @media (max-width: 991px){
 
+  .mainNavigation{
+    background-color: #cccccc;
+  }
+
+  .cat-welcome>a{
+    overflow: hidden;
+  }
+
+  .cat-welcome>a .zuhause{
+    float: left;
+    margin:  6px 0 0 15px;
+    color: #333333;
+  }
+
+  .touch .navbar .nav  .cat-welcome > a{
+    margin-right: 0;
+    padding-left: 10px;
+  }
+
+  .cat-welcome>a img{
+    float: left;
+    width: 30px;
+  }
+
+  .touch .navbar .nav > li > a, .free-shipping{
+    font-size: 17px;
+  }
+
   .no-touch .nav > li.isBasketPreview a {
     padding: 3px 0 3px 17px;
   }
@@ -7972,133 +8003,145 @@ footer img{
     font-size: 18px;
   }
 
-.form_container {
-  padding-left: 0;
-  width: 70%;
-  margin:35px 0 0 15%;
-}
-
-.touch .categoryView.isGridView .itemBox, .touch .crossSellingWrapper{
-  height: 550px;
-}
-
-.badge {
-  padding: 8px 12px;
-}
-
-.isBasketPreview .shop-cart {
-  margin: 4px 4px 0 0;
-}
-
-.navbar .nav > li > a, .navbar .nav > li > ul > li > a, .navbar .nav .dropdown-header {
-  padding: 10px 5px 8px 5px;
-}
-
-.left_white, .right_grey{
-  display: none;
-}
-
-.navbar-main > li:last-child{
-  margin-bottom: 0;
-}
-
-.navbar-icons{
-  min-width: 100%;
-  text-align: center;
-}
-
-.navbar-icons li {
-  max-width: 25%;
-  width: 25%;
-  float: none;
-  list-style: none;
-  margin:0;
-  display: inline-block;
-  padding: 0 20px;
-  min-height: 220px;
-  vertical-align: top;
-  margin-bottom: 25px;
-}
-
-.navbar-img{
-  float: none;
-}
-
-.navbar-img img {
-  width: 400px;
-  margin-bottom: 50px;
-}
-
-.cat-welcome:after{
-  border: none;
-}
-
-.navbar-form, .navbarInputWrapper{
-  margin: 0;
-  overflow: hidden;
-  margin-right: 34px;
-  padding-left: 15px;
-}
-
-.navbar .mainNavigation .cat-welcome{
-  margin-right:0;
-  text-align: center;
-}
-
-.mainNavigation .container > .navbar-form input[type="search"] {
-  width: 300px;
-  height: 34px;
-  float: left;
-  border: 1px solid #c8c8c8;
-}
-
-.free-shipping {
-  margin: 25px 0 0px 0;
-  font-size: 16px;
-  padding-bottom: 5px;
-}
-
-.navbar-main{
-  margin-top: 20px;
-  padding: 0 15px;
-  background-color: white;
-  position: absolute;
-}
-
-.navbar-default .navbar-toggle{
-    margin: 35px 15px;
+  .form_container {
+    padding-left: 0;
+    width: 70%;
+    margin:35px 0 0 15%;
   }
 
-.mainNavigation> .container{
-    width: 100%;
+  .touch .categoryView.isGridView .itemBox, .touch .crossSellingWrapper{
+    height: 490px;
+    margin-bottom:  65px;
   }
 
-.mainNavigation .container > .navbar-form button{
-  position: absolute;
-  top: 22px;
-  right: 0px;
-  z-index: 1;
-}
+  .no-touch .nav > li.isBasketPreview a{
+    width: 70px;
+  }
 
-.nav.navbar-nav.navbar-right {
-  float: right;
-  margin-top: 6px;
-}
+  .badge {
+    padding: 8px 12px;
+  }
 
-}
+  .isBasketPreview .shop-cart {
+    margin: 4px 4px 0 0;
+  }
 
-@media (max-width: 767px){
+  .navbar .nav > li > a, .navbar .nav > li > ul > li > a, .navbar .nav .dropdown-header {
+    padding: 20px;
+  }
+  .navbar .nav > li > a:first-child{
+    padding-left: 0;
+  }
+
+  .left_white, .right_grey{
+    display: none;
+  }
+
+  .navbar-main > li:last-child{
+    margin-bottom: 0;
+  }
+
+  .navbar-icons{
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .navbar-icons li {
+    max-width: 25%;
+    width: 25%;
+    float: none;
+    list-style: none;
+    margin:0;
+    display: inline-block;
+    padding: 0 20px;
+    min-height: 200px;
+    vertical-align: top;
+    margin-bottom: 25px;
+  }
+
+  .navbar-img{
+    float: none;
+  }
+
+  .navbar-img img {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+
+  .cat-welcome:after{
+    border: none;
+  }
+
+  .navbar-form, .navbarInputWrapper{
+    margin: 0;
+    overflow: hidden;
+    margin-right: 34px;
+    padding-left: 15px;
+  }
+
+  .navbar .mainNavigation .cat-welcome{
+    margin-right:0;
+    text-align: center;
+  }
+  .navbar .mainNavigation li {
+      background: #666666;
+      margin-bottom: 4px;
+      color:  white;
+  }
+
+  .navbar .mainNavigation li span{
+    color: white;
+  }
+
+  .mainNavigation .container > .navbar-form input[type="search"] {
+    width: 300px;
+    height: 34px;
+    float: left;
+    border: 1px solid #c8c8c8;
+  }
+
+  .free-shipping {
+    margin:0;
+    position: absolute;
+    top: 170px;
+    left: 18px;
+  }
+
+  .navbar-main{
+    margin-top: 20px;
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    background-color: #cccccc;
+  }
+
+  .mainNavigation> .container{
+      width: 100%;
+    }
+
+  .mainNavigation .container > .navbar-form button{
+    position: absolute;
+    top: 22px;
+    right: 0px;
+    z-index: 30;
+  }
 
   .nav.navbar-nav.navbar-right {
     float: none;
   }
 
-  .navbar-header .container{
+  .navbar-header>.container{
+    width:  auto;
     padding: 0;
   }
 
   .mobile_wrap{
     background-color: #c7c7c7;
+  }
+
+  .mobile_wrap .container {
+    float: none;
+    width: 750px;
   }
 
   .navbar-information{
@@ -8107,6 +8150,7 @@ footer img{
 
   .navbar-information .nav > .isBasketPreview{
     float: right;
+    padding: 11px 0;
   }
 
   .navbar-right, .nav.navbar-nav.navbar-right > li > a{
@@ -8117,16 +8161,20 @@ footer img{
 
   .navbar-default .navbar-toggle{
     border:  none;
-    padding: 16px 10px;
+    padding: 0;
   }
 
   .navbar-default .navbar-toggle .icon-bar{
     background-color:  #000000;
     display: block;
-    width: 32px;
-    height: 4px;
+    width: 40px;
+    height: 5px;
     border-radius: 3px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar:last-child{
+    margin-bottom: 0;
   }
 
   .navbar-default .navbar-toggle .icon-bar:nth-child(3){
@@ -8140,6 +8188,8 @@ footer img{
   .navbar-brand{
     margin-top: 0;
     padding: 0 50px;
+    margin: 0 auto;
+    width: 750px;
   }
 
   .navbar-icons li p{
@@ -8147,7 +8197,7 @@ footer img{
   }
 
   .navbar-default  .navbar-toggle{
-    margin: 18px 15px;
+    margin: 29px 0;
   }
 
   .categoryView.isGridView .itemBox .name, .crossSellingSlider .itemBox .name {
@@ -8160,7 +8210,6 @@ footer img{
 
   .navbar-img img{
     width: 230px;
-    margin-right: 44px;
     margin-bottom: 10px;
   }
 
@@ -8201,12 +8250,6 @@ footer img{
     height: 100%;
   }
 
-  [class*="form-block-"][class*="-button"]:not(.break-sm) .btn.onlyIcon {
-    height: 40px;
-    width: 100px;
-    right: -55px;
-  }
-
   .footlist_wrap .container{
     margin-top: 0;
   }
@@ -8214,11 +8257,12 @@ footer img{
   .navbar-brand .navbar-icons{
     min-width: auto; 
     float: initial;
-    margin-top: 40px;
+    margin: 60px 0 0 0;
   }
 
   .mainNavigation .container > .navbar-form input[type="search"]{
     width: 100%;
+    border-color: #ff6600;
   }
 
   .contentpageSlider .owl-buttons .owl-next{
@@ -8229,12 +8273,41 @@ footer img{
     margin-left: 10px;
   }
 
-  .free-shipping{
-    padding: 0 15px;
-    font-size: 18px;
-    margin: 10px 0 0 0;
+  .navbar .mainNavigation .nav li > a {
+    padding: 10px 8px 10px 55px;
+  }
+}
+
+@media (max-width: 767px){
+  .navbar-brand{
+    width: auto;
   }
 
+  .navbar-information{
+    padding: 0;
+  }
+
+  .mobile_wrap .container{
+    width: auto;
+  }
+
+  .touch .categoryView.isGridView .itemBox, .touch .crossSellingWrapper{
+    height: 540px;
+  }
+
+  [class*="form-block-"][class*="-button"]:not(.break-sm) .btn.onlyIcon {
+    height: 36px;
+    width: 80%;
+  }
+
+  .navbar .nav > li > a, .navbar .nav > li > ul > li > a, .navbar .nav .dropdown-header {
+    padding: 20px 15px;
+  }
+
+  .navbar-form, .navbarInputWrapper{
+    margin: 0;
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 650px){
@@ -8267,6 +8340,12 @@ footer img{
     min-height: 150px;
   }
 
+  .form_container {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
 }
 
 @media (max-width: 420px){
@@ -8289,20 +8368,39 @@ footer img{
   }
 
   .navbar-information .nav > li{
-    float: none;
-    display: inline-block;
+    width: 25%;
   }
 
   .navbar-icons li p {
-    font-size: 12px;    
+    font-size: 16px;    
   }
 
   .navbar-information .nav > .isBasketPreview{
     float: none;
-    margin-top: 7px;
+    margin: 0 auto;
+    clear: both;
   }
 
   .navbar .nav > li > a, .navbar .nav > li > ul > li > a, .navbar .nav .dropdown-header{
     padding: 10px 6px 8px 6px;
+  }
+
+  .free-shipping{
+    top: 195px;
+    font-size: 15px;
+  }
+
+  .navbar-information .nav > .isBasketPreview {
+    padding: 4px 0;
+    width: 70px;
+  }
+
+  .navbar-information .nav > .isBasketPreview a{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .badge {
+    float: left;
   }
 }
