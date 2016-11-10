@@ -8023,16 +8023,16 @@ footer img{
   border-radius: 10px;
 }
 
-.availabilityWrapper{
+.upgrade_now{
   float: right;
   margin: 6px 25px 0 0;
 }
 
-.availabilityWrapper img{
+.upgrade_now img{
   max-width: 40px;
 }
 
-.availabilityWrapper span{
+.upgrade_now span{
   margin-left: 6px;
   font-weight: bold;
   font-style: italic;
@@ -8048,6 +8048,60 @@ footer img{
   background-color: #4d4d4d;
   border-radius: 4px;
 }
+
+.categ_h3{
+  color: rgb(149, 149, 149);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8233,18 +8287,18 @@ footer img{
     margin: 15px 0;
   }
 
-  .availabilityWrapper {
+  .upgrade_now {
     margin: 0;
   }
 
-  .availabilityWrapper span{
+  .upgrade_now span{
     display: block;
     margin: 0;
     font-size: 15px;
     line-height: 7px;
   }
 
-  .availabilityWrapper img {
+  .upgrade_now img {
     max-width: 36px;
   }
 
@@ -8626,7 +8680,7 @@ footer img{
     margin: 0 0 0 30px;
   }
 
-  .availabilityWrapper {
+  .upgrade_now {
     float: left;
     margin-left: 35px;
   }
@@ -8747,16 +8801,16 @@ footer img{
   }
 
   /*PRODUCT PAGE*/
-  .availabilityWrapper img {
+  .upgrade_now img {
     display: none;
   }
 
-  .availabilityWrapper span{
+  .upgrade_now span{
     line-height: initial;
     font-size: 20px;
   }
 
-  .availabilityWrapper {
+  .upgrade_now {
     float: left;
     width: 100%;
     text-align: center;
