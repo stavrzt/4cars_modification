@@ -4884,7 +4884,6 @@ html .ui-slider-handle.ui-state-active {
 }
 .no-touch .quantityInputWrapper input {
 	width: 100%;
-	padding-right: 13px;
 }
 .no-touch .itemBoxInner .buttonBox {
 	margin: 3px;
@@ -7935,6 +7934,11 @@ footer img{
   margin-bottom: 0;
 }
 
+.singleItemView .itemTitleWrap hr{
+  background-color: #333333;
+  margin: 12px 0;
+}
+
 .singleItemDetails{
   overflow: hidden;
 }
@@ -8053,19 +8057,55 @@ footer img{
   color: rgb(149, 149, 149);
 }
 
+.availabilityWrapper{
+  padding-left: 75px;
+  margin-top: 2px;
+}
 
+.availabilityWrapper img{
+  max-width: 26px;
+}
 
+.availabilityWrapper span{
+  color: black;
+  line-height: 8px;
+  vertical-align: bottom;
+  margin-left: 8px;
+  font-size: 13px;
+}
 
+.buttonBox.p img {
+  max-width: 15px;
+  margin-right: 2px;
+  padding-bottom: 2px;
+}
 
+.buttonBox.p .btn{
+  border-radius: 6px;
+  padding: 2px 10px;
+}
 
+.navigationTree ul{
+  margin-bottom: 0; 
+}
 
+.singleItemView hr {
+    background-color: #939393;
+    margin: 4px 0 0 0;
+}
 
+.similar_articles{
+  font-size: 16px;
+  margin: 0;
+}
 
+.crossSellingItem {
+  border: 1px #939393 solid;
+}
 
-
-
-
-
+.crossSellingItem .isText{
+  clear: both;
+}
 
 
 
@@ -8221,7 +8261,7 @@ footer img{
     padding-bottom: 10px; 
   }
 
-.navbar-img img{
+  .navbar-img img{
     width: 300px;
   }
 
@@ -8280,11 +8320,16 @@ footer img{
     margin-left: 50%;
   }
 
+  .itemTitle{
+    line-height: 34px;
+  }
+
   .free_span{
     display: block;
-    text-align: center;
     width:auto;
-    margin: 15px 0;
+    border-top: 1px #333333 solid;
+    margin: 7px 0 0 0;
+    padding-top: 11px;
   }
 
   .upgrade_now {
@@ -8304,6 +8349,15 @@ footer img{
 
   .toBasketWrapper{
     margin: 0 0 0 5px;
+  }
+
+  .availabilityWrapper {
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+
+  .itemTitleWrap h1 {
+    font-size: 20px;
   }
 
 }
@@ -8678,11 +8732,21 @@ footer img{
     display: inline-block;
     width: 110px;
     margin: 0 0 0 30px;
+    padding: 0;
+    border: none;
   }
 
   .upgrade_now {
     float: left;
     margin-left: 35px;
+  }
+
+  .buttonBox.p{
+    margin-bottom: 14px;
+  }
+
+  .buttonBox.p .btn{
+    padding: 2px 5px;
   }
 
 }
@@ -8726,8 +8790,10 @@ footer img{
   /*PRODUCT PAGE*/
   .free_span{
     display: block;
-    width:auto;
-    margin: 15px 0;
+    width: auto;
+    border-top: 1px #333333 solid;
+    margin: 7px 0 0 0;
+    padding-top: 11px;
   }
 
   .priceContainer .Price{
