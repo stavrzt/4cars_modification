@@ -69,11 +69,11 @@
 
 @font-face {
 	font-family: "glyphicon";
-	src: url("/layout/callisto_3_5_de/fonts/glyphicons-halflings-regular.eot");
-	src: url("/layout/callisto_3_5_de/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
-	     url("/layout/callisto_3_5_de/fonts/glyphicons-halflings-regular.woff") format("woff"), 
-	     url("/layout/callisto_3_5_de/fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
-	     url("/layout/callisto_3_5_de/fonts/glyphicons-halflings-regular.svg#halflings") format("svg");
+	src: url("fonts/glyphicons-halflings-regular.eot");
+	src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
+	     url("fonts/glyphicons-halflings-regular.woff") format("woff"), 
+	     url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
+	     url("fonts/glyphicons-halflings-regular.svg#halflings") format("svg");
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -959,7 +959,7 @@ output {
   color: #555555;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #000000;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -990,7 +990,7 @@ output {
 .PlentyWebMyAccount textarea:focus,
 .plentyAttributeSelectWrapperContent.plentyAttributeSelectHasDropdown.open > *,
 .plentyAttributeSelectWrapperContent.plentyAttributeSelectHasDropdown.open:hover > * {
-	border-color: #66afe9;
+	border-color: #ff6600;
 	outline: 0;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 102, 0, 0.6);
 	   -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 102, 0, 0.6);
@@ -1571,9 +1571,9 @@ a.PlentyWebshopButton:focus,
 .nav a.onlyIcon > .glyphicon:before,
 .navbar .navbar-form button > .glyphicon:before,
 button.navbar-toggle > .glyphicon:before {
-	font-size: 18px;
+	font-size: 45px;
 	vertical-align: middle;
-	color: #888;
+	color: #333;
 }
 .navbar .navbar-form button.onlyIcon:hover > .glyphicon:before,
 .navbar .navbar-form button.onlyIcon:focus > .glyphicon:before {
@@ -2660,7 +2660,7 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #008ebd;
+  color: #ff6600;
   background-color: #ffffff;
 }
 /* close icon */
@@ -3576,7 +3576,7 @@ table {
 	.nav.navbar-main a:hover > .glyphicon:before,
 	.nav.navbar-main a:focus > .glyphicon:before,
 	.nav.navbar-main li.active > a > .glyphicon:before {
-		color: #008ebd;
+		color: #ff6600;
 	}
 	.navbar .nav li > .openCloseToggle {
 		display: block;
@@ -4276,7 +4276,7 @@ a.noLink:link {
 }
 /* category header box */
 .headerBox {
-	background-color: #ff6600;
+	background-color: #959595;
 }
 .headerBox * {
 	color: #fff;
@@ -4287,7 +4287,7 @@ a.noLink:link {
     line-height: 0.75em;
 }
 .headerBox h1 {
-	padding: 15px 15px 5px;
+	padding: 15px 60px;
 }
 /* nav info */
 .navbar-information .nav > li > .dropdown-menu > li > a {
@@ -4537,7 +4537,7 @@ a.noLink:link {
 .categoryPagination .navbar .nav li > a.active,
 .categoryPagination .nav a.articlePages_activeLink {
 	border-color: rgba(255, 102, 0, 0.6);
-	color: #008ebd;
+	color: #ff6600;
 }
 .categoryPagination .navbar .nav li > a.active {
 	cursor: default;
@@ -4598,7 +4598,6 @@ a.noLink:link {
 	}
 }
 /* ITEM VIEW */
-.filterLabel,
 .CharacterFilterGroupName {
 	font-weight: bold;
 }
@@ -4703,7 +4702,7 @@ html .ui-slider .ui-slider-handle {
 	        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
 }
 html .ui-slider-handle.ui-state-active {
-	background: #008ebd;
+	background: #ff6600;
 }
 .ui-slider-handle.ui-state-focus {
 	outline: none;
@@ -4847,7 +4846,7 @@ html .ui-slider-handle.ui-state-active {
 	overflow: hidden;
 	padding-left: 3px;
 	padding-right: 3px;
-  margin: 15px 0 40px 0;
+  margin: 15px 0 25px 0;
 }
 .itemBox .price .uvp,
 .itemBoxSingleView .price .uvp {
@@ -6885,7 +6884,7 @@ span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer + span.PlentyFo
 	background-color: rgba(255, 255, 255, 0.75);
 }
 .text-bg.blue {
-	background-color: #008ebd;
+	background-color: #ff6600;
 	background-color: rgba(0, 142, 189, 0.8);
 	color: #fff;
 }
@@ -7119,7 +7118,7 @@ span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer + span.PlentyFo
 }
 .checkout-nav > ul > li.active > span:before,
 .checkout-nav > ul > li.active > span:after {
-	background-color: #008ebd;
+	background-color: #ff6600;
 }
 .checkout-nav > ul > li:hover > span:before,
 .checkout-nav > ul > li:hover > span:after {
@@ -7383,7 +7382,7 @@ input.panel-select[type="radio"],
 } 
 
 .address-select input:checked + .address-box-inner {
-	border-color: #66afe9;
+	border-color: #ff6600;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
@@ -7397,7 +7396,7 @@ input.panel-select[type="radio"],
 }
 
 .panel-select:checked + .panel > .panel-heading {
-	border-color: #66afe9 #66afe9 #ddd #66afe9;
+	border-color: #ff6600 #ff6600 #ddd #ff6600;
 }
 
 .panel-select + .panel > .panel-body {
@@ -7405,7 +7404,7 @@ input.panel-select[type="radio"],
 }
 
 .panel-select:checked + .panel > .panel-body {
-	border-color: #66afe9;
+	border-color: #ff6600;
 }
 
 label .row,
@@ -7539,7 +7538,7 @@ dd.clear:after {
   overflow: auto;
   margin: 0;
   padding: 2px 0 0 0;
-  border: 1px solid #66afe9;
+  border: 1px solid #ff6600;
   box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
   background: #fff;
   border-radius: 4px;
@@ -7998,12 +7997,13 @@ footer img{
 
 .no-touch .singleItemDetails .quantityInputButton{
   border-color: #ff6600;
-  font-size: 11px;
-  text-indent: 3px;
+  font-size: 8px;
+  text-indent: 1px;
 }
 
 .no-touch .btn.quantityInputButton.isPlus{
   right: -6px;
+  text-align: center;
 }
 
 .no-touch .btn.quantityInputButton.isMinus{
@@ -8108,12 +8108,6 @@ footer img{
   border: 1px #939393 solid;
   text-align: center;
   padding: 0;
-}
-
-.crossSellingItem .shipping img {
-  max-width: 17px;
-  float: right;
-  margin: 0px 6px 0 0;
 }
 
 .crossSellingItem .line-through{
@@ -8243,34 +8237,104 @@ footer .social_icons li a:hover{
   opacity: 0.5;
 }
 
+/*CATEGORY PAGE*/
 
+.category_name{
+  padding-left: 120px;
+  margin-top: 6px;
+}
 
+.category_name:after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 0;
+  border-bottom: 110px solid #ffffff;
+  border-left: 40px solid #959595;
+}
 
+.category_name h1{
+  margin: 0;
+  font-weight: normal;
+}
 
+.filterSubnavigationPanel .h3{
+  color: #000000;
+  font-weight: bold;
+  font-size: 23px;
+}
 
+.categoryPagination .navbar-right a,
+.categoryPagination .navbar-right li,
+.categoryPagination .navbar-right a.articlePages_activeLink,
+.categoryPagination .nav.navbar-right li > a{
+    color: #008733;
+    border-color: #008733;
+}
 
+.plentyAttributeSelectHasImageGallery ul{
+  width: 164px;
+}
 
+.plentyAttributeSelectHasImageGallery ul > li > a{
+  width: 25px;
+  height: 25px;
+  background: red;
+}
 
+.plentyAttributeSelectHasImageGallery ul > li.plentyAttributeSelectSelected a{
+  border-color: black;
+}
 
+.filterExist .oldprice{
+  font-size: 12px;
+  font-weight: normal;
+}
 
+.filterExist .crossSellingItem .shipping img, .filterExist .categoryDetails .shipping img, .isSingleItem .shipping img {
+  max-width: 17px;
+  float: right;
+  margin: 0px 6px 0 0;
+}
 
+.no-touch .filterExist .categoryView.isGridView .itemBox{
+  height: 325px;
+}
 
+.filterExist .categoryDetails .shipping img {
+  margin: 12px 10px 0 0;
+}
 
+.filterLabel{
+  font-weight: bold;
+  color: #ff6600;
+  margin-top: 10px;
+}
 
+.subnavigationPanel .h3{
+  color: #959595;
+  font-weight: normal;
+}
 
+html .filterExist .categoryView.isGridView .itemBox:last-child{
+  margin-bottom: 24px;
+}
 
+.filterExist footer{
+  margin-top: 30px;
+}
 
+.filterExist .categoryView.isGridView .itemBox .name{
+  color: #666666;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.filterExist .itemBox .name{
+  padding: 6px 0;
+  line-height: 18px;
+}
 
 
 
@@ -8481,6 +8545,20 @@ footer .social_icons li a:hover{
 
   #description h6:last-of-type{
     padding-left: 62px;
+  }
+
+  /*CATEGORY PAGE*/
+
+  .category_name {
+    padding-left: 90px;
+  }
+
+  .category_name:after {
+    border-bottom: 90px solid #ffffff;
+  }
+
+  .no-touch .filterExist .categoryView.isGridView .itemBox {
+    height: 360px;
   }
 
 }
@@ -8798,6 +8876,41 @@ footer .social_icons li a:hover{
   .breadcrumbs{
     padding-left: 0;
   }
+
+    /*CATEGORY PAGE*/
+  .category_name:after {
+    border-bottom: 80px solid #ffffff;
+  }
+
+  .category_name{
+    padding-left: 0;
+  }
+
+  .filterExist .categoryView .nav > li > a:first-child{
+    padding: 3px 8px;
+  }
+
+  .no-touch .filterExist .categoryView.isGridView .itemBox{
+    height: 236px;
+    border: none;
+    margin-bottom: 24px;
+  }
+
+  .filterExist ul.categoryDetails{
+    margin-bottom: 0;
+  }
+
+  .filterExist .asidePanel .nav-tabs > li.active > a{
+    background-color: #ff6600;
+  }
+
+  .filterExist .basketPreviewContainer.asidePanel{
+    color: black;
+  }
+
+  .nav-tabs > li:first-child > a{
+    border-left: 1px solid #ff6600;
+  }
 }
 
 @media (max-width: 767px){
@@ -8881,6 +8994,20 @@ footer .social_icons li a:hover{
 
   .social_icons li{
     text-align: center;
+  }
+
+  /*CATEGORY PAGE*/
+  .category_name:after {
+    border-bottom: 60px solid #ffffff;
+  }
+
+  .no-touch .filterExist .categoryView.isGridView .itemBox{
+    height: auto;
+    border-bottom: 2px solid lightgrey;
+  }
+
+  .filterExist .categoryDetails .shipping img {
+    margin: 12px 10px 2px 0;
   }
 
 }
@@ -9066,5 +9193,15 @@ footer .social_icons li a:hover{
     font-size: 13.5px;
   }
 
+  /*CATEGORY PAGE*/
+  html .navbar .nav > li > a, .free-shipping {
+    font-size: 15px;
+  }
+
+  .navbar-img img {
+    width: 204px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
 }
 
