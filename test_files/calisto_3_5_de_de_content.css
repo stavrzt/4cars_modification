@@ -909,7 +909,7 @@ input[type="search"] {
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
-  margin-top: 1px 9;
+  margin-top: 1px;
   /* IE8-9 */
   line-height: normal;
 }
@@ -3309,7 +3309,6 @@ table {
 	width: 225px;
 	height: 44px;
 	margin: 0;
-	border: none;
 	background-color: white;
 	-webkit-border-radius: 8px 0 0 8px;
 	   -moz-border-radius: 8px 0 0 8px;
@@ -4297,7 +4296,6 @@ a.noLink:link {
 @media (min-width: 992px) {
 	.navbar-information .nav > li > a {
 	    z-index: 2005;
-      font-family: Arial;
 	}
 	.navbar-information .nav > li > .dropdown-menu {
 		z-index: 2000;
@@ -4835,7 +4833,6 @@ html .ui-slider-handle.ui-state-active {
 	margin: 0;
 }
 .itemBox .name {
-  font-family: Arial;
 	font-size: 16px;
 	padding: 6px 0;
 }
@@ -5104,7 +5101,6 @@ ul.categoryDetails {
 .availabilityIcon span {
 	border-width: 1px;
 	border-style: solid;
-	border-color: transparent;
 	border-color: rgba(0, 0, 0, 0.2);
 	-webkit-border-radius: 2px;
 	   -moz-border-radius: 2px;
@@ -5261,7 +5257,7 @@ ul.categoryDetails {
   }
 }
 .magnifyarea {
-	top: 0px !important;
+	top: 0 !important;
 	z-index: 10 !important;
 }
 @media (min-width: 768px) {
@@ -6128,8 +6124,7 @@ input[name="item_rating_name"],
 		        transition:         transform 0.2s ease-in-out;
 	}
 	.mainNavigation,
-	.asidePanel,
-	.asidePanel .nav-tabs > li.active > a {
+	.asidePanel{
 		background: #fff;
 	}
 	body.filterExist .asidePanel.filterPanel {
@@ -7129,7 +7124,7 @@ span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer + span.PlentyFo
 		display: none;
 	}
 	.checkout-nav > ul > li > span .glyphicon {
-		padding-right: 0px;
+		padding-right: 0;
 	}
 }
 @media( min-width: 768px ) {
@@ -7643,7 +7638,7 @@ html .hidden-touch {
 /*CUSTOM*/
 
 body{
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 .mobile_wrap .container{
@@ -7669,7 +7664,7 @@ body{
   font-size: 19px;
 }
 
-.no-touch .nav > li.dropdown:hover > a:before{
+.no-touch .nav > .dropdown:hover > a:before{
   display: none;
 }
 
@@ -7939,6 +7934,12 @@ footer img{
   margin-bottom: 0;
 }
 
+.isSingleItem .itemTitleWrap img.shipping {
+    max-width: 30px;
+    width: 30px;
+    float: left;
+}
+
 .singleItemView .itemTitleWrap hr{
   background-color: #333333;
   margin: 12px 0;
@@ -8140,7 +8141,7 @@ footer img{
   padding: 0 15px 0 90px;
 }
 
-.sidebar_category a.name.block.basicColor{
+.sidebar_category .basicColor{
   color:  #666666;
 }
 
@@ -8168,11 +8169,11 @@ footer img{
   margin-bottom: 10px;
 }
 
-#description>h4, .tab-content>div>p, .tab-content>div ul{
+.tab-pane>h4, .tab-content>div>p, .tab-content>div ul{
   padding-left: 30px;
 }
 
-#description>ul{
+.tab-pane>ul{
   margin-bottom: 30px;
 }
 
@@ -8199,24 +8200,24 @@ footer img{
 }
 
 
-#description h6{
+.tab-pane h6{
   text-align: center;
   margin: 50px 0 10px 0;
   font-size: 18px;
   font-weight: normal;
 }
 
-#description h6:last-of-type{
+.tab-pane h6:last-of-type{
   margin: 0 0 15px 0;
   padding-left: 77px;
 }
 
-#description h6 em{
+.tab-pane h6 em{
   text-decoration: underline;
   font-style: italic;
 }
 
-#description h6 strong{
+.tab-pane h6 strong{
   color: #ff0000;
 }
 
@@ -8291,10 +8292,10 @@ footer .social_icons li a:hover{
   font-weight: normal;
 }
 
-.filterExist .crossSellingItem .shipping img, .filterExist .categoryDetails .shipping img, .isSingleItem .shipping img {
+.filterExist .crossSellingItem .shipping img, .filterExist .categoryDetails .shipping img, .isSingleItem img.shipping, .isSingleItem .shipping img{
   max-width: 17px;
   float: right;
-  margin: 0px 6px 0 0;
+  margin: 0 6px 0 0;
 }
 
 .no-touch .filterExist .categoryView.isGridView .itemBox{
@@ -8335,75 +8336,6 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
   padding: 6px 0;
   line-height: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*CUSTOM PRODUCT PAGE END*/
@@ -8535,7 +8467,7 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
     font-size: 20px;
   }
 
-  .tab-content li, #description h6, #description>h4, .tab-content p{
+  .tab-content li, .tab-pane h6, .tab-pane>h4, .tab-content p{
     font-size: 14px;
   }
 
@@ -8543,7 +8475,7 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
     padding-left: 74px;
   }
 
-  #description h6:last-of-type{
+  .tab-pane h6:last-of-type{
     padding-left: 62px;
   }
 
@@ -8706,7 +8638,6 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
   .navbar-main{
     margin-top: 20px;
     padding: 0;
-    background-color: white;
     position: absolute;
     background-color: #cccccc;
   }
@@ -8718,7 +8649,7 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
   .mainNavigation .container > .navbar-form button{
     position: absolute;
     top: 22px;
-    right: 0px;
+    right: 0;
     z-index: 30;
   }
 
@@ -8782,7 +8713,6 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
   }
 
   .navbar-brand{
-    margin-top: 0;
     padding: 0 50px;
     margin: 0 auto;
     width: 750px;
@@ -8814,7 +8744,7 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
   }
 
   .logo_container p{
-    min-height: auto;
+    min-height: initial;
   }
 
   .logo_container .row>div{
@@ -8851,7 +8781,6 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
   }
 
   .navbar-brand .navbar-icons{
-    min-width: auto; 
     float: initial;
     margin: 60px 0 0 0;
   }
@@ -8900,11 +8829,7 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
     margin-bottom: 0;
   }
 
-  .filterExist .asidePanel .nav-tabs > li.active > a{
-    background-color: #ff6600;
-  }
-
-  .filterExist .basketPreviewContainer.asidePanel{
+  .basketPreviewContainer.asidePanel{
     color: black;
   }
 
@@ -9008,6 +8933,7 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
 
   .filterExist .categoryDetails .shipping img {
     margin: 12px 10px 2px 0;
+    max-width: 30px;
   }
 
 }
@@ -9074,21 +9000,21 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
     margin:  10px 0;
   }
 
-  #description h6{
+  .tab-pane h6{
     text-align: left;
     margin-top: 20px;
   }
 
-  #description h6 strong {
+  .tab-pane h6 strong {
     display: block;
     margin-bottom: 5px;
   }
 
-  #description h6:last-of-type{
+  .tab-pane h6:last-of-type{
     padding: 0;
   }
 
-  #description>h4, .tab-content>div>p, .tab-content>div ul{
+  .tab-pane>h4, .tab-content>div>p, .tab-content>div ul{
     padding-left: 0;
   }
 
@@ -9199,9 +9125,13 @@ html .filterExist .categoryView.isGridView .itemBox:last-child{
   }
 
   .navbar-img img {
-    width: 204px;
+    width: 186px;
     margin-bottom: 10px;
-    margin-top: 5px;
+    margin-top: 7px;
+  }
+
+  .nav a.onlyIcon > .glyphicon:before, .navbar .navbar-form button > .glyphicon:before, button.navbar-toggle > .glyphicon:before {
+    font-size: 38px;
   }
 }
 
